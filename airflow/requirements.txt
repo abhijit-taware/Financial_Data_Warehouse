@@ -1,0 +1,10 @@
+pandas-market-calendars
+yfinance
+requests
+python-dotenv
+pyarrow
+confluent-kafka
+apache-airflow-providers-papermill
+apache-airflow-providers-apache-spark
+delta-spark
+pyspark

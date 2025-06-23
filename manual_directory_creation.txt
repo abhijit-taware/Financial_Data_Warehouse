@@ -1,0 +1,8 @@
+#Run inside airflow folder
+
+New-Item -ItemType Directory -Path "data\processed\crypto" -Force
+New-Item -ItemType Directory -Path "data\checkpoints\crypto" -Force
+New-Item -ItemType Directory -Path "data\processed\stock" -Force
+New-Item -ItemType Directory -Path "data\checkpoints\stock" -Force
+
+icacls "data" /grant Everyone:F /T

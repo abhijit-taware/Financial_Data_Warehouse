@@ -1,0 +1,17 @@
+Steps required to run this pipeline efficiently:
+1. Run below queries in command line to create directories for processed data and checkpoint location
+            #Run inside airflow folder
+
+            New-Item -ItemType Directory -Path "data\processed\crypto" -Force
+            New-Item -ItemType Directory -Path "data\checkpoints\crypto" -Force
+            New-Item -ItemType Directory -Path "data\processed\stock" -Force
+            New-Item -ItemType Directory -Path "data\checkpoints\stock" -Force
+
+            icacls "data" /grant Everyone:F /T
+
+2. Before every run clear kafka/data folder and zookeeper/data to avoid any error with kafka container 
+
+3. You are ready to start docker 
+    1. docker-compose build airflow-init 
+    2. docker-compose up --build -d  
+    3. Terminate Docker -> docker-compose down 
