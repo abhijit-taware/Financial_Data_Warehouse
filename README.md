@@ -254,16 +254,3 @@ docker-compose down
 - `manual_directory_creation.txt`: Manual directory setup (Windows)
 
 ---
-
-## Contributing
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes
-4. Push to your fork and submit a pull request
-
----
-
-## Contact
-
-For questions, suggestions, or contributions, please open an issue or pull request on the
